@@ -5,7 +5,7 @@ Home: https://toolbelt.readthedocs.org
 
 Package license: Apache-2.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A utility belt for advanced users of python-requests
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/requests-toolbelt-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/requests-toolbelt-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/requests-toolbelt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/requests-toolbelt-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/requests-toolbelt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/requests-toolbelt-feedstock/branch/master)
