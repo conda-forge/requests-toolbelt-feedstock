@@ -1,11 +1,13 @@
+{% set version = "0.6.2" %}
+
 package:
     name: requests-toolbelt
-    version: 0.6.0
+    version: {{ version }}
 
 source:
-    fn: requests-toolbelt-0.6.0.tar.gz
-    url: https://pypi.python.org/packages/source/r/requests-toolbelt/requests-toolbelt-0.6.0.tar.gz
-    md5: f7863ab5144a3ace64a4c851ec290907
+    fn: requests-toolbelt-{{ version }}.tar.gz
+    url: https://pypi.io/packages/source/r/requests-toolbelt/requests-toolbelt-{{ version }}.tar.gz
+    md5: 6bd97e8dfa636bc4918798e332a3f1d4
 
 build:
     number: 0
