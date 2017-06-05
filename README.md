@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: A utility belt for advanced users of python-requests
+Summary: A utility belt for advanced users of python-requests.
 
 
 
