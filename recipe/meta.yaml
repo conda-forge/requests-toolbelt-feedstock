@@ -1,26 +1,25 @@
-{% set version = "0.9.1" %}
+{% set name = "requests-toolbelt" %}
+{% set version = "0.10.0" %}
 
 package:
-  name: requests-toolbelt
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: requests-toolbelt-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/r/requests-toolbelt/requests-toolbelt-{{ version }}.tar.gz
-  sha256: 968089d4584ad4ad7c171454f0a5c6dac23971e9472521ea3b6d49d610aa6fc0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/requests-toolbelt-{{ version }}.tar.gz
+  sha256: f695d6207931200b46c8ef6addbc8a921fb5d77cc4cd209c2e7d39293fcd2b30
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
+    - python >=3.6
     - pip
-    - python
-    - setuptools
   run:
-    - python
+    - python >=3.6
     - requests >=2.0.1,<=3.0.0
 
 test:
@@ -32,12 +31,16 @@ test:
     - requests_toolbelt.multipart
     - requests_toolbelt.threaded
     - requests_toolbelt.utils
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://toolbelt.readthedocs.org
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'A utility belt for advanced users of python-requests.'
+  summary: A utility belt for advanced users of python-requests.
 
 extra:
   recipe-maintainers:
