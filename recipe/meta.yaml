@@ -1,5 +1,5 @@
 {% set name = "requests-toolbelt" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/requests-toolbelt-{{ version }}.tar.gz
-  sha256: f695d6207931200b46c8ef6addbc8a921fb5d77cc4cd209c2e7d39293fcd2b30
+  sha256: 62e09f7ff5ccbda92772a29f394a49c3ad6cb181d568b1337626b2abb628a63d
 
 build:
   noarch: python
